@@ -15,6 +15,11 @@ class _LocationInputState extends State<LocationInput> {
         Container(
           height: 170,
           width: double.infinity,
+          decoration: BoxDecoration(
+              border: Border.all(
+            width: 1,
+            color: Colors.grey,
+          )),
           alignment: Alignment.center,
           child: _previewImageUrl == null
               ? Text(
@@ -28,6 +33,7 @@ class _LocationInputState extends State<LocationInput> {
                 ),
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton.icon(
               icon: Icon(Icons.location_on),
